@@ -5,6 +5,7 @@ require_relative '../lib/vampire'
 
 class VampireTest < Minitest::Test
   def test_it_has_a_name
+    skip
     vampire = Vampire.new("Dracula")
     assert_equal "Dracula", vampire.name
   end
@@ -28,13 +29,11 @@ class VampireTest < Minitest::Test
   end
 
   def test_it_is_thirsty_by_default
-    skip
     vampire = Vampire.new("Count von Count")
     assert vampire.thirsty?
   end
 
   def test_it_is_not_thirsty_after_drinking
-    skip
     vampire = Vampire.new("Elizabeth Bathory")
     vampire.drink
     refute vampire.thirsty?
