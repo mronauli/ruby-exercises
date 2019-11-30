@@ -1,9 +1,10 @@
 class Person
   attr_reader :name
   attr_accessor :stoned
-  def initialize(name, stoned = false)
+
+  def initialize(name)
     @name = name
-    @stoned = stoned
+    @stoned = false
   end
 
   def stoned?

@@ -7,8 +7,8 @@ class Medusa
     @count = 0
   end
 
-  def empty?
-    statues.count
+    def empty?
+      statues.count
     end
 
   def stare(victim)
@@ -19,7 +19,7 @@ class Medusa
       victim1 = statues.shift
       victim1.stoned = false
     end
-    end
+  end
 
   def count_statues
     statues.count
